@@ -8,12 +8,12 @@ const GiphyExpertApp = () => {
     
   return (
     <>
-      GiphyExpertApp
+      <h2>GiphyExpertApp</h2>
       <hr/>
       <AddCategory setCategories={setCategories}/>
       <ol>
         { 
-            categories.map((category)=> (
+            categories.map((category) => (
                 <GifGrid 
                     category={category}
                     key={category}

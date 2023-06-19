@@ -17,14 +17,16 @@ export const AddCategory = ({setCategories}) => {
     return (
     <form onSubmit={handleSubmit}>
       <input
+        className='inputSearch'
         type="text"
         value={inputValue}
+        placeholder='Search gift'
         onChange={handleInputChange}
       />
     </form>
   )
 }
 
-AddCategory.prototype = {
+AddCategory.protoTypes = {
     setCategories : PropTypes.func.isRequired    
 }
